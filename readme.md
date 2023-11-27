@@ -24,8 +24,8 @@ Java 8, Spring Boot, H2 In-memory database and Gradle
    }`
    on successful appointment, the response body will contain a unique `appointmentId` which can be used for updating and checking the appointment status
 7. To view the db, navigate to http://localhost:8081/api/h2-console in browser to access h2 console and use following credentials to login into db
-   `JDBC url= jdbc:h2:mem:doctor-appointment
-    User Name= sa
+   `JDBC url= jdbc:h2:mem:doctor-appointment;
+    User Name= sa;
     password= password`
 8. To update an appointment, make HTTP `PUT` call to endpoint http://localhost:8081/api/appointments/{appointmentId} with the appointmentId as PathVariable
    `{
